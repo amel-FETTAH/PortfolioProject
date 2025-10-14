@@ -1,0 +1,119 @@
+.contact-section {
+  padding: 100px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 40px;
+}
+
+/* === FORMULAIRE === */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  max-width: 600px;
+  margin: 0 auto 50px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #fd6f00;
+}
+
+.send-btn {
+  background-color: #fd6f00;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.send-btn:hover {
+  background-color: #e85c00;
+  transform: translateY(-2px);
+}
+
+/* === INFOS === */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #333;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* === RÉSEAUX === */
+.social-text {
+  margin-top: 30px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.social-icons svg {
+  cursor: pointer;
+  color: #333;
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.social-icons svg:hover {
+  transform: scale(1.2);
+  color: #fd6f00;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 600px) {
+  .contact-form {
+    width: 90%;
+  }
+
+  .contact-item {
+    font-size: 0.9rem;
+  }
+}
+.status-message {
+  margin-top: 10px;
+  font-weight: 500;
+  color: #333;
+}

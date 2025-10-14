@@ -1,0 +1,120 @@
+/* ===== SECTION HOME ===== */
+.home {
+  padding: 120px 10%;
+  background-color: #fff;
+}
+
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px; /* plus d’espace entre le texte et la photo */
+  padding-right: 0; /* pas de marge inutile à droite */
+}
+/* ===== TEXTE À GAUCHE ===== */
+.home-text {
+  flex: 1;
+}
+
+.intro {
+  font-size: 1.5rem; /* ag small heading 24 */
+  font-family: 'Arial', sans-serif;
+  color: #000;
+}
+
+.name {
+  font-size: 2.5rem; /* poppins 32 semibold */
+  font-weight: 600;
+  color: #fd6f00;
+  margin: 10px 0;
+}
+
+.role {
+  font-size: 1.3rem; /* ag main heading h1 */
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.description {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+  max-width: 480px;
+}
+
+/* ===== BOUTON ===== */
+.contact-btn {
+  background-color: #fd6f00;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 6px;
+  margin-top: 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #e85c00;
+}
+
+/* ===== IMAGE ===== */
+.home-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: -5px; /* petit écran par défaut */
+}
+
+/* ===== Pour les GRANDS ÉCRANS ===== */
+@media screen and (min-width: 1200px) {
+  .home-image {
+    margin-right: -100px; /* pousse la photo vers le bord droit */
+  }
+}
+.circle {
+  width: 320px;
+  height: 320px;
+  border: 6px solid #fd6f00;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .home-container {
+    flex-direction: column-reverse; /* image en haut, texte en bas */
+    text-align: center;
+  }
+
+  .circle {
+    width: 250px;
+    height: 250px;
+  }
+
+  .home-text {
+    margin-top: 20px;
+  }
+
+  .name {
+    font-size: 2rem;
+  }
+
+  .role {
+    font-size: 1.1rem;
+  }
+}

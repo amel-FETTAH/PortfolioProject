@@ -1,0 +1,143 @@
+/* =============================
+   🌟 SECTION COMPETENCES
+   ============================= */
+.competences-section {
+  text-align: center;
+  padding: 100px 120px;
+  background-color: #fff;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  font-size: 0.95rem;
+  color: #444;
+  max-width: 600px;
+  margin: 0 auto 50px auto;
+  line-height: 1.5;
+}
+
+/* =============================
+   🌟 CONTAINER DES CARTES
+   ============================= */
+.competences-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  justify-content: center;
+  align-items: start;
+}
+
+.competence-card {
+  background-color: #f9f9f9;
+  padding: 25px 20px;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.competence-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* =============================
+   🌟 ICONES ET TEXTES
+   ============================= */
+.competence-icon {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.competence-card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #000;
+}
+
+.competence-card p {
+  font-size: 0.9rem;
+  color: #333;
+  line-height: 1.4;
+  max-width: 230px;
+  margin: 0 auto;
+}
+
+/* =============================
+   📱 RESPONSIVE DESIGN
+   ============================= */
+
+/* Tablettes (écrans moyens) */
+@media (max-width: 1024px) {
+  .competences-section {
+    padding: 80px 60px;
+  }
+
+  .competences-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+}
+
+/* Petits écrans (mobile) */
+@media (max-width: 768px) {
+  .competences-section {
+    padding: 60px 20px;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .section-subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 40px;
+  }
+
+  .competences-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .competence-card {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .competence-icon {
+    width: 45px;
+    height: 45px;
+  }
+
+  .competence-card p {
+    font-size: 0.85rem;
+  }
+}
+
+/* Très petits écrans (mobiles <480px) */
+@media (max-width: 480px) {
+  .competences-section {
+    padding: 40px 10px;
+  }
+
+  .section-title {
+    font-size: 1.4rem;
+  }
+
+  .competence-card {
+    padding: 15px;
+  }
+
+  .competence-card p {
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,196 @@
+/* =============================
+   🌟 SECTION PROJETS
+   ============================= */
+.projects-section {
+  text-align: center;
+  padding: 100px 120px;
+  background-color: #fff;
+}
+
+.projects-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.projects-section p {
+  font-size: 0.95rem;
+  color: #444;
+  max-width: 600px;
+  margin: 0 auto 60px auto;
+  line-height: 1.5;
+}
+
+/* =============================
+   🌟 CONTAINER DES PROJETS
+   ============================= */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  justify-content: center;
+  align-items: start;
+}
+
+/* =============================
+   🌟 CARTE DE PROJET
+   ============================= */
+.project-card {
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* =============================
+   🌟 IMAGE DU PROJET
+   ============================= */
+.project-image {
+  width: 100%;
+  height: 280px; /* ⬆️ Hauteur augmentée */
+  object-fit: cover;
+  border-bottom: 2px solid #f0f0f0;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.03); /* effet zoom fluide */
+}
+
+/* =============================
+   🌟 CONTENU DU PROJET
+   ============================= */
+.project-content {
+  padding: 20px 25px 30px 25px;
+}
+
+.project-content h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.project-content p {
+  font-size: 0.9rem;
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.view-project-btn {
+  display: inline-block;
+  padding: 8px 18px;
+  background-color: #fd6f00;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.view-project-btn:hover {
+  background-color: #e55f00;
+}
+
+/* =============================
+   📱 RESPONSIVE DESIGN
+   ============================= */
+
+/* Tablettes */
+@media (max-width: 1024px) {
+  .projects-section {
+    padding: 80px 60px;
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .project-card {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .project-image {
+    height: 220px; /* 📉 Hauteur réduite sur tablette */
+  }
+}
+
+/* Petits écrans (mobiles) */
+@media (max-width: 768px) {
+  .projects-section {
+    padding: 60px 20px;
+  }
+
+  .projects-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .projects-section p {
+    font-size: 0.9rem;
+    margin-bottom: 40px;
+  }
+
+  .project-card {
+    border-radius: 10px;
+  }
+
+  .project-content {
+    padding: 15px 18px 25px 18px;
+  }
+
+  .project-content h3 {
+    font-size: 1rem;
+  }
+
+  .project-content p {
+    font-size: 0.85rem;
+  }
+
+  .view-project-btn {
+    font-size: 0.85rem;
+    padding: 7px 15px;
+  }
+
+  .project-image {
+    height: 180px; /* 📱 plus petite sur mobile */
+  }
+}
+
+/* Très petits écrans (<480px) */
+@media (max-width: 480px) {
+  .projects-section {
+    padding: 40px 10px;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+
+  .project-image {
+    height: 160px; /* encore un peu réduite */
+  }
+
+  .project-content {
+    padding: 12px 15px 20px 15px;
+  }
+
+  .project-content h3 {
+    font-size: 0.95rem;
+  }
+
+  .project-content p {
+    font-size: 0.8rem;
+  }
+}
