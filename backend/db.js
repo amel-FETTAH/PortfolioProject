@@ -10,6 +10,11 @@ const pool = mysql.createPool({
   database: process.env.DB_NAME || 'portfolio',
   waitForConnections: true,
   connectionLimit: 10,
+
+  // ✅ Ajout essentiel pour les serveurs MySQL Cloud
+  ssl: {
+    rejectUnauthorized: true, // sécurité recommandée
+  },
 });
 
 export default pool;
